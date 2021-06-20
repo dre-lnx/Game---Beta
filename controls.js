@@ -1,4 +1,4 @@
-    //Orientações
+    //Orientações e inicializações
 
     var x = $(window).width() - 100;
 
@@ -6,7 +6,17 @@
 
     var square = $('.square');
 
-    var body = $('body')
+    var score = $('.score');
+
+    var body = $('body');
+
+    var a = 1;
+
+    $(document).ready(function(s){
+        score.css("margin-left", Math.floor(Math.random() * x));
+        score.css("margin-top", Math.floor(Math.random() * y));
+    })
+
 
     body.keypress(function(b){
 
